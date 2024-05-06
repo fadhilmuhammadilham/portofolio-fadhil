@@ -41,10 +41,8 @@ skillLink.addEventListener('click', function (event) {
 const portoLink = document.querySelector('a[href="#porto"]');
 portoLink.addEventListener('click', function (event) {
     event.preventDefault();
-    // Mendapatkan posisi vertikal dari bagian "Portofolio"
     const portoSection = document.getElementById('porto');
     const portoSectionPosition = portoSection.offsetTop;
-    // Mengatur scroll ke posisi tersebut dengan perilaku smooth
     window.scrollTo({
         top: portoSectionPosition,
         behavior: 'smooth'
